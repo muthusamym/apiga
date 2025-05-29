@@ -22,7 +22,7 @@ jobs:
           ini-values: post_max_size=256M, upload_max_filesize=256M
 
       - name: Install Composer dependencies
-        run: cd apiga && composer install --prefer-dist --no-progress
+        run:  composer install --prefer-dist --no-progress
 
       - name: Copy .env.testing
         run: cp .env.testing .env
